@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './App.css';
 
 /* Components */
@@ -218,6 +218,7 @@ const FAQ = [
 
 function App() {
   const [detailsOptions, setDetailsOptions] = useState('Vision');
+  const detailsRef = useRef<null | HTMLDivElement>(null);
   const Details = () => {
     switch (detailsOptions) {
       case 'Vision':
@@ -262,11 +263,31 @@ function App() {
         <img className="Ambassadorship__logo" src={Rocket} alt="Rocket" />
       </div>
       <div className="Guidance">
-        <GlassCard title="Vision" onClick={() => setDetailsOptions('Vision')} />
-        <GlassCard title="Guidelines" onClick={() => setDetailsOptions('Guidelines')} />
-        <GlassCard title="Apply" onClick={() => setDetailsOptions('Apply')} />
+        <GlassCard
+          title="Vision"
+          onClick={() => {
+            setDetailsOptions('Vision');
+            detailsRef.current?.scrollIntoView({ behavior: 'smooth' });
+          }}
+        />
+        <GlassCard
+          title="Guidelines"
+          onClick={() => {
+            setDetailsOptions('Guidelines');
+            detailsRef.current?.scrollIntoView({ behavior: 'smooth' });
+          }}
+        />
+        <GlassCard
+          title="Apply"
+          onClick={() => {
+            setDetailsOptions('Apply');
+            detailsRef.current?.scrollIntoView({ behavior: 'smooth' });
+          }}
+        />
       </div>
-      <div className="Details">{Details()}</div>
+      <div className="Details" ref={detailsRef}>
+        {Details()}
+      </div>
       <div className="FAQ">
         <h1 className="FAQ__title">FAQ</h1>
         <div className="FAQ__content">
