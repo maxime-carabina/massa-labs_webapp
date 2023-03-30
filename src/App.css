@@ -1,0 +1,91 @@
+.App {
+  box-sizing: border-box;
+  font-family: var(--tt-commons-regular);
+
+  width: 100%;
+  max-width: 1540px;
+  margin: auto;
+}
+
+.Ambassadorship__banner {
+  padding-top: 100px;
+  margin-bottom: 50px;
+
+  display: flex;
+  /*justify-content: space-evenly;*/
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Ambassadorship-container__topic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Ambassadorship-container__topic h1 {
+  font-family: var(--tt-commons-medium);
+  font-size: 7rem;
+  letter-spacing: 3px;
+}
+
+.Ambassadorship-container__topic h2 {
+  font-family: var(--tt-commons-regular);
+  font-size: 2rem;
+  text-align: justify;
+
+  margin: 0;
+}
+
+.Ambassadorship-container__topic p {
+  font-family: var(--tt-commons-light);
+  font-size: 1.5rem;
+  text-align: justify;
+
+  max-width: 800px;
+}
+
+.Ambassadorship__logo {
+  width: 40%;
+  object-fit: contain;
+
+  padding-top: 5rem;
+  /*padding-left: 4rem;*/
+}
+
+.Guidance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Details {
+  margin-top: 140px;
+}
+
+.Details__vision-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*gap: 10px;*/
+}
+
+.Details__vision-container img {
+  width: 30%;
+  object-fit: contain;
+}
+
+.Details__vision-container h1 {
+  font-family: var(--tt-commons-medium);
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.Details__vision-container p {
+  font-family: var(--tt-commons-light);
+  font-size: 1.5rem;
+  text-align: justify;
+
+  max-width: 600px;
+}

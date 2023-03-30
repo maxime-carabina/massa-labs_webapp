@@ -1,0 +1,79 @@
+:root {
+  /* FONTS */
+  --tt-commons-black: 'TT Commons Black';
+  --tt-commons-bold: 'TT Commons Bold';
+  --tt-commons-medium: 'TT Commons Medium';
+  --tt-commons-regular: 'TT Commons Regular';
+  --tt-commons-light: 'TT Commons Light';
+
+  /* COLORS */
+  --color-primary-red: #e74e4e;
+  --color-secondary-blue: #0000ee;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /* MARGIN */
+  --margin-0-5: 0.5rem;
+  --margin-1: 1rem;
+  --margin-1-5: 1.5rem;
+  --margin-2: 2rem;
+
+  /* PADDING */
+  --padding-5: 5px;
+  --padding-10: 10px;
+  --padding-15: 15px;
+  --padding-20: 20px;
+  --padding-25: 25px;
+}
+
+body {
+  margin: 0;
+  padding: 15px;
+
+  font-family: -apple-system, var(--tt-commons-regular), 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: url('assets/bbblurry.svg');
+  background-attachment: fixed;
+  background-color: var(--color-black);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-white);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'TT Commons Black';
+  src: local('TT Commons Black'), url('fonts/TT Commons/TT Commons Black.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons Bold';
+  src: local('TT Commons Bold'), url('fonts/TT Commons/TT Commons Bold.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons Medium';
+  src: local('TT Commons Medium'), url('fonts/TT Commons/TT Commons Medium.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons Regular';
+  src: local('TT Commons Regular'), url('fonts/TT Commons/TT Commons Regular.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons Light';
+  src: local('TT Commons Light'), url('fonts/TT Commons/TT Commons Light.otf') format('opentype');
+}
