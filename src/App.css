@@ -89,3 +89,81 @@
 
   max-width: 600px;
 }
+
+.Details__guidelines {
+  margin: auto;
+  padding: 0 70px;
+
+  text-align: justify;
+}
+
+.Details__guidelines p {
+  font-size: 1.5rem;
+}
+
+.Details__guidelines h1 {
+  margin-top: 3rem;
+}
+
+.Details__guidelines ul li {
+  font-size: 1.5rem;
+}
+
+.Details__apply {
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  gap: 3rem;
+}
+
+.Details__content {
+  /*width: 90%;*/
+  /*max-width: 500px;*/
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  text-align: justify;
+}
+
+.Details__content img {
+  width: 70%;
+  /*height: 90%;*/
+  /*max-height: 300px;*/
+  object-fit: contain;
+}
+
+.Details__content-info {
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Details__content-info p {
+  font-size: 1.5rem;
+}
+
+.FAQ {
+  margin-top: 140px;
+}
+
+.FAQ__title {
+  font-size: 2rem;
+  font-family: var(--tt-commons-medium);
+  color: var(--color-primary-red);
+}
+
+@media screen and (max-width: 1600px) {
+  .Ambassadorship__banner {
+    justify-content: center;
+  }
+
+  .Ambassadorship__logo {
+    display: none;
+  }
+}

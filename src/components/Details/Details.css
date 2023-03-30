@@ -1,0 +1,22 @@
+.DetailsCard {
+  padding-bottom: 20px;
+}
+
+.DetailsCard__summary {
+  font-size: 1.5rem;
+  font-family: var(--tt-commons-medium);
+}
+
+.DetailsCard__content {
+  font-size: 1.5rem;
+  font-family: var(--tt-commons-light);
+}
+
+.DetailsCard__content p {
+  padding-left: 35px;
+}
+
+.DetailsCard__content ul {
+  margin: 24px 0;
+  padding-left: 55px;
+}
